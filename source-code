@@ -1,0 +1,48 @@
+
+from audioop import add
+from pickletools import float8
+from time import sleep
+
+
+print("  Caluclator \n -------------")
+
+sleep(1)
+
+num1 = float(input("Enter a number\n :"))
+sleep(1)
+
+mathsymb = int(input(
+    "Enter one of the options below: \n 1) Subtraction\n 2)Addition\n 3)Multiplication \n 4)Division\n :"))
+sleep(1)
+
+
+num2 = float(input("Enter a second number\n :"))
+sleep(1)
+
+
+def solve():
+
+    if mathsymb == 1:
+        print(f" Your Problem is {num1} - {num2} = ?")
+        sleep(1)
+        subout = num1 - num2
+        print(f" Your Solution = {subout}")
+    if mathsymb == 2:
+        print(f" Your Problem is {num1} + {num2} = ?")
+        sleep(1)
+        addout = num1 + num2
+        print(f" Your Solution = {addout}")
+    if mathsymb == 3:
+        print(f"Yout Problem = {num1} x {num2} = ? ")
+        sleep(1)
+        multout = num1 * num2
+        print(f" Your Solution = {multout}")
+    if mathsymb == 4:
+        print(f" Your Problem is {num1} / {num2} = ?")
+        sleep(1)
+        divout = num1 / num2
+        print(f" Your Solution = {divout}")
+
+
+solve()
+
